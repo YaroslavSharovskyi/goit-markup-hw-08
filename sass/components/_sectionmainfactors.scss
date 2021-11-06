@@ -1,0 +1,43 @@
+.head-main-factors {
+  font-weight: 700;
+  font-size: inherit;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.title-main-factors {
+  color: $secondary-text-color;
+}
+
+.main-factors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-factors-li {
+  margin-right: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+.rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+  background-color: $bgc-team;
+}
+
+.anteena,
+.clock,
+.diagram,
+.astronaut {
+  width: 70px;
+  height: 70px;
+}

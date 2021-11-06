@@ -1,0 +1,27 @@
+.portfolio__set-buttons {
+  text-align: center;
+}
+
+.portfolio__button {
+  min-width: 73px;
+  margin-bottom: 50px;
+  margin-right: 8px;
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  cursor: pointer;
+  background: $bgc-team;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+
+  border: none;
+
+  transition: color $transistion-effect, background-color $transistion-effect;
+
+  &:hover,
+  &:focus {
+    background-color: $hoover-color;
+    color: #ffffff;
+  }
+}
