@@ -550,8 +550,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 450px;
-  min-height: 609px;
+  width: 450px;
+  height: 609px;
   padding: 8px;
   background-color: #fff;
 }
@@ -585,8 +585,9 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.5;
-  text-align: center;
+  margin: 0 auto;
   margin-bottom: 12px;
+  width: 370px;
   color: #212121;
 }
 
@@ -594,6 +595,7 @@ body {
   .head-modal {
     font-size: 20px;
     line-height: 1.15;
+    width: 448px;
   }
 }
 
@@ -679,6 +681,7 @@ body {
 .check-text {
   font-size: 12px;
   line-height: 1.16;
+  min-width: 370px;
   color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
