@@ -1,8 +1,8 @@
 .header {
   border-bottom: 1px solid #ececec;
-  margin-bottom: 3px;
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 
   background-color: teal;
 
@@ -145,6 +145,10 @@
 }
 
 .mobile-menu__tel-number {
+  @media screen and (max-width: 479px) {
+    font-size: 8vw;
+  }
+
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
