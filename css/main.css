@@ -1177,7 +1177,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .logo-frame {
-    margin-right: auto;
+    margin: 0 auto 0 0;
   }
 }
 
@@ -1185,7 +1185,6 @@ body {
   .logo-frame {
     width: 145px;
     height: 31px;
-    margin-right: auto;
   }
 }
 
