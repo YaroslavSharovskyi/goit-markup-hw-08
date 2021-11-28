@@ -897,7 +897,7 @@ body {
 }
 
 .our-team {
-  background-color: var(--bgc-team);
+  background-color: #f5f4fa;
 }
 
 @media screen and (min-width: 768px) {
@@ -1037,12 +1037,19 @@ body {
 
 .regular-customers-title {
   text-align: center;
-  margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16px;
-  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers-title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16px;
+  }
 }
 
 .companies-list {
@@ -1054,8 +1061,6 @@ body {
 }
 
 .each-company {
-  -ms-flex-preferred-size: calc((100% - 150px) / 6);
-      flex-basis: calc((100% - 150px) / 6);
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1066,16 +1071,41 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.each-company:not(:nth-child(6n)) {
-  margin-right: 30px;
+.each-company:nth-child(2n) {
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .each-company {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+  .each-company:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .each-company {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+    margin-bottom: 0px;
+  }
+  .each-company:nth-child(6n) {
+    margin-right: 0px;
+  }
 }
 
 .each-company:hover, .each-company:focus {
