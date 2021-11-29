@@ -1,11 +1,15 @@
 .portfolio__set-buttons {
-  text-align: center;
+  text-align: start;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 }
 
 .portfolio__button {
   min-width: 73px;
-  margin-bottom: 50px;
   margin-right: 8px;
+  margin-bottom: 15px;
   padding: 6px 22px;
   border-radius: 4px;
 
@@ -23,5 +27,9 @@
   &:focus {
     background-color: $hoover-color;
     color: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
   }
 }
