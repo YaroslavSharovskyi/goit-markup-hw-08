@@ -84,7 +84,6 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
-  background-color: teal;
 }
 
 @media screen and (min-width: 768px) {
@@ -1484,8 +1483,10 @@ body {
   }
 }
 
-.portfolio__exams {
-  padding-top: 25px;
+@media screen and (max-width: 767px) {
+  .portfolio__exams {
+    padding-top: 25px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1516,7 +1517,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .card {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
