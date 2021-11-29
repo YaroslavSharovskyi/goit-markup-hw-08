@@ -1182,6 +1182,7 @@ body {
   .logo-frame {
     width: 145px;
     height: 31px;
+    margin: 0 auto 0 0;
   }
 }
 
