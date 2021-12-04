@@ -328,10 +328,8 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .current {
-    color: #2196f3;
-  }
+.current {
+  color: #2196f3;
 }
 
 .header-title {
