@@ -79,7 +79,7 @@
                         <li class="mobile-menu__page-title">
                             <a href="./index.html" class="link mobile-menu__page-link">Студия</a>
                         </li>
-                        <li class="mobile-menu__page-title">
+                        <li class="mobile-menu__page-title current">
                             <a href="./porfolio.html" class="link mobile-menu__page-link">Портфолио</a>
                         </li>
                         <li class="mobile-menu__page-title">
@@ -120,13 +120,24 @@
 <main>
     <section class="portfolio container">
         <h1 class="portfolio__visually-hidden-head">Портфолио</h1>
-       <div class="portfolio__set-buttons">
+       <ul class="portfolio__set-buttons list">
+           <li class="portfolio__each-button">
             <button class="portfolio__button" type="button">Все</button>
-            <button class="portfolio__button" type="button">Приложения</button>
+           </li>
+            <li class="portfolio__each-button">
+                <button class="portfolio__button" type="button">Приложения</button>
+            </li>
+            <li class="portfolio__each-button">
             <button class="portfolio__button" type="button">Дизайн</button>
-            <button class="portfolio__button" type="button">Маркетинг</button>
-            <button class="portfolio__button" type="button">Веб-сайты</button>
-       </div>
+            </li>
+            <li class="portfolio__each-button">
+                <button class="portfolio__button" type="button">Маркетинг</button>
+            </li>
+            <li class="portfolio__each-button">
+                <button class="portfolio__button" type="button">Веб-сайты</button>
+            </li>
+
+       </ul>
         <ul class="list portfolio__exams">
             <li class="card">
                 <div class="card__container">
