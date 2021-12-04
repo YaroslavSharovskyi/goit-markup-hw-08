@@ -1,6 +1,6 @@
 .portfolio__set-buttons {
   display: flex;
-  align-items: flex-start;
+  // align-items: flex-start;
   flex-wrap: wrap;
 
   // @media screen and (min-width: 768px) {
@@ -16,12 +16,15 @@
   margin-bottom: 15px;
   margin-right: 8px;
 
-  &:nth-child(n - 2) {
+  &:nth-child(n + 4) {
     margin-bottom: 0px;
-    margin-right: 0px;
+  }
 
-    @media screen and (max-width: 767px) {
-    }
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  @media screen and (max-width: 767px) {
   }
 }
 

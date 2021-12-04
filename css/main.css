@@ -1441,9 +1441,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1453,8 +1450,11 @@ body {
   margin-right: 8px;
 }
 
-.portfolio__each-button:nth-child(n - 2) {
+.portfolio__each-button:nth-child(n + 4) {
   margin-bottom: 0px;
+}
+
+.portfolio__each-button:last-child {
   margin-right: 0px;
 }
 
